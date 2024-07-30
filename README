@@ -1,0 +1,32 @@
+# CUDA Vector Addition
+
+This project demonstrates a simple CUDA application that performs vector addition. It includes both host and device code to add two vectors element-wise using CUDA.
+
+## Overview
+
+The CUDA vector addition project demonstrates the following concepts:
+- Writing a CUDA kernel to perform parallel computations.
+- Allocating and deallocating memory on the GPU.
+- Copying data between host and device memory.
+- Launching CUDA kernels with appropriate grid and block dimensions.
+
+## Files
+
+- `vector_add.cu`: The main CUDA source file containing the vector addition kernel and the host code.
+
+## Prerequisites
+
+- NVIDIA GPU with CUDA Compute Capability
+- CUDA Toolkit (vX.X or later) installed
+- NVIDIA drivers compatible with your CUDA Toolkit version
+
+## Compilation
+
+1. Ensure you have the CUDA Toolkit installed and the `nvcc` compiler is available in your system's PATH.
+
+2. Navigate to the directory containing `vector_add.cu`.
+
+3. Compile the CUDA code using the following command:
+
+   ```sh
+   nvcc -o vector_add vector_add.cu
